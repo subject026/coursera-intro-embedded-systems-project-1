@@ -1,0 +1,15 @@
+```bash
+$ docker build build-arg=$(shell whoami) -t intro-embedded-systems-project1
+```
+
+```bash
+$ docker run --rm -it -v "$PWD:/app" ruby:2.3 bash
+```
+
+
+`--rm` - removes container once finished
+`-it` - interactive mode
+`-v "$PWD:/app"` - volume: takes current working directory and share it inside the container as `/app` 
+`ruby:2.3` - the image we want to run
+`bash` - run bash as we want to do some stuff
+
